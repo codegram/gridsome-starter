@@ -4,7 +4,7 @@ on:
     branches:
       - master
 env:
-  PATH_PREFIX: '/gridsome-starter'
+  GRIDSOME_PATH_PREFIX: '/gridsome-starter'
 
 jobs:
   build-and-deploy:
