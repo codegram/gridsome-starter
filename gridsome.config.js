@@ -25,6 +25,8 @@ module.exports = {
       : process.env.DEPLOY_PRIME_URL
     : 'https://localhost',
 
+  pathPrefix: process.env.GRIDSOME_PATH_PREFIX,
+
   titleTemplate: `%s | Gridsome`,
 
   plugins: [

@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+env:
+  PATH_PREFIX: '/gridsome-starter'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
