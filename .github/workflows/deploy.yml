@@ -3,8 +3,6 @@ on:
   push:
     branches:
       - master
-env:
-  GRIDSOME_PATH_PREFIX: '/gridsome-starter'
 
 jobs:
   build-and-deploy:
@@ -20,6 +18,8 @@ jobs:
         run: |
           npm install
       - name: Build
+        env:
+          BASE_DIR: '/gridsome-starter'
         run: |
           npm run build
       - name: Deploy
